@@ -1,0 +1,11 @@
+#{$project}-header {
+  
+  .navbar-brand {
+    font-family: 'Rancho', sans-serif;
+    @include font-size-em(24);
+  }
+
+  .nav-link {
+    text-transform: uppercase;
+  }
+}
