@@ -1,8 +1,11 @@
-@import '~bootstrap/scss/_buttons';
-@import '~bootstrap/scss/_close.scss';
-@import '~bootstrap/scss/_forms';
-@import '~bootstrap/scss/_modal';
-@import '~bootstrap/scss/_navbar';
+// Bootstrap components styles
+@import '~bootstrap/scss/transitions';
+@import '~bootstrap/scss/buttons';
+@import '~bootstrap/scss/close';
+@import '~bootstrap/scss/navbar';
+@import '~bootstrap/scss/nav';
+@import '~bootstrap/scss/dropdown';
 
-@import 'pre-header/index';
-@import 'modal/index';
+
+// Project components
+@import './header/header';

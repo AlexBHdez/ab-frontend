@@ -89,10 +89,10 @@ module.exports = {
             chunks: ['index']
         }),
         new HtmlWebpackPlugin({
-            title: 'public page',
+            title: 'Alex Bretones | Graphic & Web Development',
             template: './src/views/public/public.hbs',
             filename: 'public/index.html',
-            description: 'This is my public page',
+            description: 'Personal Portfolio Alex Bretones',
             chunks: ['public']
         }),
     ],

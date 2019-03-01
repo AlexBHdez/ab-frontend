@@ -10,3 +10,7 @@ $social-links: map-merge((
   "gplus": $gplus,
   "linkedin": $linkedin,
 ), $social-links);
+
+// Override Bootstrap
+$primary: #131416;
+$secondary: rgba(255, 63, 0, .8);
