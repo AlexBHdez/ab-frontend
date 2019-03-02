@@ -1,0 +1,70 @@
+#{$project}-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  
+  .navbar-brand {
+    @include font-size-em(24);
+    font-family: 'Rancho', sans-serif;
+  }
+
+  .navbar-burger {
+    background-color: transparent;
+    border: 0;
+    padding: 0;
+    -webkit-appearance: none;
+    width: $burger-width;
+
+    &-icon {
+      background-color: $secondary;
+      border-radius: $burger-icon-height;
+      height: $burger-icon-height;
+      width: 100%;
+
+      &:not(:last-child) {
+        margin-bottom: em(5);
+      }
+    }
+  }
+
+  .navbar-nav {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+
+    .nav-item {
+      .nav-link {
+        @include font-size-em(60);
+        text-transform: uppercase;
+        position: relative;
+
+        &::before {
+          background-color: $secondary;
+          bottom: 0;
+          content: '';
+          height: 2px;
+          left: 0;
+          position: absolute;
+          transform-origin: 0;
+          transition: width $slow ease;
+          width: 0%;
+        }
+
+        &:hover {
+          &::before {
+            width: 100%;
+          }
+        }
+      }
+      
+      &.active {
+        .nav-link:hover {
+          color: $navbar-dark-hover-color;
+        }
+      }
+    }
+    
+  }
+
+}
