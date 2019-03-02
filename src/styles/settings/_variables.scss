@@ -7,6 +7,7 @@ $project: app;
 
 // Fonts-Family
 $rancho-google-font: 'https://fonts.googleapis.com/css?family=Rancho" rel="stylesheet';
+$oswald-google-font: 'https://fonts.googleapis.com/css?family=Oswald:200,400,600';
 
 // Routes
 $url-img: '/../assets/img';
@@ -19,6 +20,15 @@ $slow: .5s;
 
 // Fonts-sizes
 $font-size-basic: 16;
+
+// Navbar
+$burger-width: 30px;
+$burger-icon-height: 4px;
+$burger-icon-radius: $burger-icon-height;
+$navbar-dark-color: $white;
+$navbar-dark-hover-color: rgba($white, .5);
+$navbar-dark-active-color: $white;
+
 
 //========================================
 // Override variables
