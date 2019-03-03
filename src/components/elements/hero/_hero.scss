@@ -7,5 +7,33 @@
     background-position: center;
     background-size: cover;
     height: 100vh;
+    position: relative;
+    
+    &::before {
+      @include gradient-directional(rgba($primary, .5), rgba($secondary, .05), 45deg);
+      content: '';
+      display: block;
+      position: absolute;
+      height: 100%;
+      width: 100%;
+    }
+
+    .h1 {
+      @include font-size-em(17);
+      border-bottom: 3px solid rgba($white, .5);
+      color: $white;
+      font-weight: $thin;
+      text-transform: uppercase;
+    }
+
+    .h2 {
+      @include font-size-em(120);
+      color: $white;
+      font-weight: $bold;
+      line-height: .9;
+      padding-right: em(35);
+      padding-top: em(2);
+      text-transform: uppercase;
+    }
   }
 }
