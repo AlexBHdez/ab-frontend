@@ -10,7 +10,7 @@ $rancho-google-font: 'https://fonts.googleapis.com/css?family=Rancho" rel="style
 $oswald-google-font: 'https://fonts.googleapis.com/css?family=Oswald:200,400,600';
 
 // Routes
-$url-img: '/../assets/img';
+$url-img: '/../assets/images';
 $url-fonts: '/../assets/fonts';
 
 // Transition
@@ -22,8 +22,8 @@ $slow: .5s;
 $font-size-basic: 16;
 
 // Navbar
-$burger-width: 30px;
-$burger-icon-height: 4px;
+$burger-width: 25px;
+$burger-icon-height: 2px;
 $burger-icon-radius: $burger-icon-height;
 $navbar-dark-color: $white;
 $navbar-dark-hover-color: rgba($white, .5);
