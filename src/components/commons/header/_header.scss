@@ -43,9 +43,13 @@
 
     .nav-item {
       .nav-link {
-        @include font-size-em(60);
+        @include font-size-em(30);
         text-transform: uppercase;
         position: relative;
+        
+        @include media-breakpoint-up(md) {
+          @include font-size-em(60);
+        }
 
         &::before {
           background-color: $secondary;

@@ -18,22 +18,37 @@
       width: 100%;
     }
 
-    .h1 {
-      @include font-size-em(17);
-      border-bottom: 3px solid rgba($white, .5);
-      color: $white;
-      font-weight: $thin;
-      text-transform: uppercase;
+    &__text {
+      padding: .5rem 1rem;
+      z-index: 1;
     }
 
+    .h1 {
+      @include font-size-em(17);
+      border-bottom: 3px solid rgba($white, .2);
+      color: $white;
+      font-weight: $thin;
+      margin-bottom: em(10);
+      text-transform: uppercase;
+    }
+    
     .h2 {
-      @include font-size-em(120);
+      @include font-size-em(40);
       color: $white;
       font-weight: $bold;
       line-height: .9;
-      padding-right: em(35);
-      padding-top: em(2);
+      padding-right: em(60);
+      padding-top: em(5);
       text-transform: uppercase;
+      
+      @include media-breakpoint-up(md) {
+        @include font-size-em(80);
+        padding-right: em(50);
+      }
+
+      @include media-breakpoint-up(lg) {
+        @include font-size-em(100);
+      }
     }
   }
 }
