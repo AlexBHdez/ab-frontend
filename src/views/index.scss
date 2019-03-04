@@ -1,1 +1,11 @@
-// Customice your index of contents
+// core
+@import '../styles/base.scss';
+
+// layout
+@import '../styles/layout/_public-landing';
+
+// commons
+@import '../components/commons/index';
+
+// public components
+@import '../components/modules/public-component/index';
