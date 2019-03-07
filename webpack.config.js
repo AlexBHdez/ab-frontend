@@ -89,7 +89,7 @@ module.exports = {
         })
     ],
     devServer: {
-        contentBase: './dist',
+        contentBase: './public',
         host: 'localhost', // by default, to public 0.0.0.0
         port: 3000,
     }
