@@ -1,0 +1,13 @@
+#{$project}-about {
+  display: block;
+  
+  background-color: $primary;
+  color: $white;
+
+  .title {
+    @include font-size-em(30);
+
+    text-align: center;
+    text-transform: uppercase;
+  }
+}
