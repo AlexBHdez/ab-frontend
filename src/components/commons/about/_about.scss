@@ -1,13 +1,57 @@
 #{$project}-about {
   display: block;
+  padding-top: 5em;
+  padding-bottom: 5em; 
   
   background-color: $primary;
   color: $white;
 
   .title {
-    @include font-size-em(30);
+    @include font-size-em(25);
+    margin-bottom: 4em;
 
+    font-weight: $bold;
     text-align: center;
     text-transform: uppercase;
+  }
+
+  .h2 {
+    @include font-size-em(40);
+    font-weight: $bold;
+    margin-bottom: 1.2em;
+  }
+
+  .bio {
+    font-weight: $thin;
+    line-height: 1.8;
+  }
+
+  #{$project}-about-item {
+    display: flex;
+    margin-bottom: 40px;
+
+    .icon-wrapper {
+      flex-shrink: 0;
+      margin-right: 30px;
+      width: 50px;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .content-wrapper {
+      .h3 {
+        @include font-size-em(20);
+
+        text-transform: uppercase;
+      }
+
+      .text {
+        color: $gray;
+        font-weight: $thin;
+        line-height: 1.8;
+      }
+    }
   }
 }
