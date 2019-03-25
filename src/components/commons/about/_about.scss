@@ -1,18 +1,28 @@
 #{$project}-about {
   display: block;
   padding-top: 5em;
-  padding-bottom: 5em; 
+  padding-bottom: 5em;
   
   background-color: $primary;
   color: $white;
 
+  @media (min-width: 1200px) {
+    padding-left: 8em;
+    padding-right: 8em;
+  }
+
   .title {
     @include font-size-em(25);
     margin-bottom: 4em;
-
+    
     font-weight: $bold;
     text-align: center;
     text-transform: uppercase;
+    
+    @media (min-width: 1000px) {
+      @include font-size-em(45);
+      margin-bottom: 2em;
+    }
   }
 
   .h2 {
