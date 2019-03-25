@@ -5,10 +5,16 @@
     <main class="main">
         {{> app-hero }}
         {{> app-about 
-            title="I am a creative freelancer based in Barcelona, Spain, specialized in Branding Identity and Web design with strong front-end coding skills." }}
-        {{> app-projects }}
+            title="I am a creative freelancer based in Barcelona, Spain, specialized in Branding Identity and Web design with strong front-end coding skills." 
+            id="about"
+        }}
+        {{> app-projects 
+            id="projects"
+        }}
         {{!-- clients --}}
-        {{> app-contact }}
+        {{> app-contact 
+            id="contact"
+        }}
     </main>
     {{!-- footer --}}
 {{/ base }}
