@@ -1,0 +1,54 @@
+#{$project}-hero {
+  .hero {
+    // FIXME: add image 2x
+    // @include retinize(#{$url-img}/header-alexbretones, png);
+    background-image: url(#{$url-img}/header-alexbretones.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    
+    &::before {
+      @include gradient-directional(rgba($primary, .5), rgba($secondary, .05), 45deg);
+      content: '';
+      display: block;
+      position: absolute;
+      height: 100%;
+      width: 100%;
+    }
+
+    &__text {
+      padding: .5rem 1rem;
+      z-index: 1;
+    }
+
+    .h1 {
+      @include font-size-em(17);
+      border-bottom: 3px solid rgba($white, .2);
+      color: $white;
+      font-weight: $thin;
+      margin-bottom: em(10);
+      text-transform: uppercase;
+    }
+    
+    .h2 {
+      @include font-size-em(40);
+      color: $white;
+      font-weight: $bold;
+      line-height: .9;
+      padding-right: em(60);
+      padding-top: em(5);
+      text-transform: uppercase;
+      
+      @include media-breakpoint-up(md) {
+        @include font-size-em(80);
+        padding-right: em(50);
+      }
+
+      @include media-breakpoint-up(lg) {
+        @include font-size-em(100);
+      }
+    }
+  }
+}

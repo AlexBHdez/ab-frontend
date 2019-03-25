@@ -10,3 +10,11 @@ $social-links: map-merge((
   "gplus": $gplus,
   "linkedin": $linkedin,
 ), $social-links);
+
+// Project Colors
+$white: #FFFFFF;
+$gray: #D1D1CF;
+
+// Override Bootstrap
+$primary: #131416;
+$secondary: rgba(255, 63, 0, .8);

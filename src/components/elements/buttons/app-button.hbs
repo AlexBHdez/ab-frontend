@@ -1,0 +1,11 @@
+<app-button class="{{colClasses}}">
+  {{#if buttonWithA}}
+    <a href="{{buttonLink}}" class="btn {{className}}">
+      {{buttonText}}
+    </a>
+  {{else}}
+    <button type="button" class="btn {{className}}">
+      {{buttonText}}
+    </button>
+  {{/if}}
+</app-button>

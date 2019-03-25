@@ -1,0 +1,87 @@
+#{$project}-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: $zindex-fixed;
+
+  .navbar {
+    background-color: transparent;
+    border-bottom: 1px solid rgba($white, .4);
+
+    transition: background-color $fast ease-in-out;
+
+    &.navbar-bg {
+      background-color: $primary;
+      border-color: $primary;
+    }
+  }
+  
+  .navbar-brand {
+    @include font-size-em(24);
+    font-family: 'Rancho', sans-serif;
+  }
+
+  .navbar-burger {
+    background-color: transparent;
+    border: 0;
+    padding: 0;
+    -webkit-appearance: none;
+    width: $burger-width;
+
+    &-icon {
+      background-color: $white;
+      border-radius: $burger-icon-height;
+      height: $burger-icon-height;
+      width: 100%;
+
+      &:not(:last-child) {
+        margin-bottom: em(4);
+      }
+    }
+  }
+
+  .navbar-nav {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+
+    .nav-item {
+      .nav-link {
+        @include font-size-em(30);
+        text-transform: uppercase;
+        position: relative;
+        
+        @include media-breakpoint-up(md) {
+          @include font-size-em(60);
+        }
+
+        &::before {
+          background-color: $secondary;
+          bottom: 0;
+          content: '';
+          height: 2px;
+          left: 0;
+          position: absolute;
+          transform-origin: 0;
+          transition: width $slow ease;
+          width: 0%;
+        }
+
+        &:hover {
+          &::before {
+            width: 100%;
+          }
+        }
+      }
+      
+      &.active {
+        .nav-link:hover {
+          color: $navbar-dark-hover-color;
+        }
+      }
+    }
+    
+  }
+
+}

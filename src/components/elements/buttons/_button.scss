@@ -1,0 +1,7 @@
+#{$project}-button {
+  .btn {
+    @include font-size-em(12);
+    padding: .8em 1em;
+    text-transform: uppercase;
+  }
+}

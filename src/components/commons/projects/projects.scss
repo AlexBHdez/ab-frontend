@@ -1,0 +1,12 @@
+#{$project}-projects {
+  .intro {
+    color: $white;
+    text-transform: uppercase;
+
+    min-height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}

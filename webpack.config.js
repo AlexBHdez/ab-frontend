@@ -10,12 +10,11 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 module.exports = {
     context: path.resolve(__dirname),
     entry: {
-        index: './src/views/index.js',
-        public: './src/views/public/public.js'
+        index: './src/views/index.js'
     },
     output: {
         filename: 'js/[name].js',
-        path: path.resolve(__dirname, 'dist')
+        path: path.resolve(__dirname, 'public')
     },
     module: {
         rules: [
@@ -82,22 +81,15 @@ module.exports = {
             chunkFilename: "[id].css"
         }),
         new HtmlWebpackPlugin({
-            title: 'index',
+            title: 'Alex Bretones | Graphic & Web Development',
             template: './src/views/index.hbs',
             filename: 'index.html',
-            description: 'index of pages',
+            description: 'Personal Portfolio Alex Bretones',
             chunks: ['index']
-        }),
-        new HtmlWebpackPlugin({
-            title: 'public page',
-            template: './src/views/public/public.hbs',
-            filename: 'public/index.html',
-            description: 'This is my public page',
-            chunks: ['public']
-        }),
+        })
     ],
     devServer: {
-        contentBase: './dist',
+        contentBase: './public',
         host: 'localhost', // by default, to public 0.0.0.0
         port: 3000,
     }

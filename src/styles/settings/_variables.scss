@@ -5,8 +5,12 @@
 // Project name abbreviation for components
 $project: app;
 
+// Fonts-Family
+$rancho-google-font: 'https://fonts.googleapis.com/css?family=Rancho" rel="stylesheet';
+$oswald-google-font: 'https://fonts.googleapis.com/css?family=Oswald:200,400,600';
+
 // Routes
-$url-img: '/../assets/img';
+$url-img: '/../assets/images';
 $url-fonts: '/../assets/fonts';
 
 // Transition
@@ -14,8 +18,28 @@ $fast: .15s;
 $medium: .3s;
 $slow: .5s;
 
-// Fonts
+// Fonts-sizes
 $font-size-basic: 16;
+
+// Fonts-weight
+$thin: 200;
+$regular: 400;
+$bold: 700;
+
+// Navbar
+$burger-width: 25px;
+$burger-icon-height: 2px;
+$burger-icon-radius: $burger-icon-height;
+$navbar-dark-color: $white;
+$navbar-dark-hover-color: rgba($white, .5);
+$navbar-dark-active-color: $white;
+
+// Measures
+$pl: 1rem;
+$pr: 1rem;
+$pt: .5rem;
+$pb: .5rem;
+
 
 //========================================
 // Override variables

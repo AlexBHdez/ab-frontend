@@ -1,0 +1,42 @@
+<app-about id="{{id}}">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12">
+        <h2 class="title">
+          {{ title }}
+        </h2>
+      </div>
+      {{> app-about-item 
+          className="col-12 col-md-4"
+          iconSrc="/../assets/images/stamp-icon.png"
+          title="branding"
+          description="Discover the essence of a brand and create a complete identity across all current platforms."
+      }}
+      {{> app-about-item
+          className="col-12 col-md-4" 
+          iconSrc="/../assets/images/web-design-icon.png"
+          title="web design"
+          description="From a sketch to a fully functional website with or without CMS."
+      }}
+      {{> app-about-item
+          className="col-12 col-md-4" 
+          iconSrc="/../assets/images/coding-icon.png"
+          title="front-end"
+          description="I develop applications with Javascript, Node.js, MongoDB and with frameworks like Angular or React."
+      }}
+      <div class="col-12">
+        <h2 class="h2 text-center text-uppercase">background</h2>
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <p class="bio text-md-right">I am a graphic designer with a Master Degree in Business Management (Universitat de Barcelona), a Postdegree in Ecommerce (Seeway) and a Master Degree in Graphic Design and Digital Art (Seeway). I also have a Degree in Education which allowed me to teach design in different schools in Barcelona. I just finished Ironhack Web Development part-time learning full stack technologies, I believe that both, my design experience aligned with my education in Full-Stack Development will allow me to grow into a more proficient and complete designer professional.</p>
+            {{> app-button buttonWithA=false buttonText="download my cv" colClasses="" className="d-block btn-outline-secondary text-light rounded-0 btn-md ml-1 mt-2 ml-md-auto" }}
+            {{> app-button buttonWithA=false buttonText="checkout my projects" colClasses="" className="d-block btn-outline-secondary text-light rounded-0 btn-md ml-1 mt-2 ml-md-auto" }}
+          </div>
+          <div class="col-12 col-md-6 bg-white d-flex justify-content-center align-items-center text-dark">
+            currently in work
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</app-about>

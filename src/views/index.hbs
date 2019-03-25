@@ -1,10 +1,20 @@
-<div class="container">
-    <div class="row">
-        <h1 class="col-12">Index</h1>
-        <ul class="col-12">
-            <li>
-                <a href="/public">public</a>
-            </li>
-        </ul>
-    </div>
-</div>
+{{#> base className="public-landing" }}
+    <header>
+        {{> app-header }}
+    </header>
+    <main class="main">
+        {{> app-hero }}
+        {{> app-about 
+            title="I am a creative freelancer based in Barcelona, Spain, specialized in Branding Identity and Web design with strong front-end coding skills." 
+            id="about"
+        }}
+        {{> app-projects 
+            id="projects"
+        }}
+        {{!-- clients --}}
+        {{> app-contact 
+            id="contact"
+        }}
+    </main>
+    {{!-- footer --}}
+{{/ base }}
