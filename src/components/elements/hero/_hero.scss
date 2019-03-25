@@ -2,7 +2,7 @@
   .hero {
     // FIXME: add image 2x
     // @include retinize(#{$url-img}/header-alexbretones, png);
-    background-image: url(#{$url-img}/header-alexbretones.png);
+    background-image: url('../assets/images/header-alexbretones.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
