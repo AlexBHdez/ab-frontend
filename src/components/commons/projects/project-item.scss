@@ -1,0 +1,36 @@
+#{$project}-project-item {
+  display: block;
+  min-height: 450px;
+
+  article {
+    height: 100%;
+
+    .project__hover {
+      display: none;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+
+      background-color: rgba($primary, .6);
+
+      &.show {
+        display: flex;
+      }
+
+      .project__info {
+        color: $white;
+        text-align: center;
+
+        &_title {
+          @include font-size-em(17);
+          font-weight: $bold;
+        }
+        
+        &_subtitle {
+          @include font-size-em(12);
+          font-weight: $bold;
+        }
+      }
+    }
+  }
+}

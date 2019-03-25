@@ -1,14 +1,14 @@
-<app-project-item>
-  <article>
+<app-project-item class="{{wrapperClasses}}">
+  <article style="background: url('/../assets/images/projects/{{imageUrl}}') no-repeat scroll center center / cover;">
     <div class="project__hover">
       <a href="#">
         <div class="project__hover_layer">
           <div class="project__info">
             <h3 class="project__info_title">
-              project title
+              {{projectTitle}}
             </h3>
             <h4 class="project__info_subtitle">
-              project subtitle
+              {{projectSubtitle}}
             </h4>
           </div>
         </div>
