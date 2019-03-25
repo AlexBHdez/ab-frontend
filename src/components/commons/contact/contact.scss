@@ -1,6 +1,63 @@
 #{$project}-contact {
   display: block;
+  padding-top: 4em;
+  padding-bottom: 4em;
 
   background-color: $secondary;
   color: $white;
+
+  @media (min-width: 1200px) {
+    padding-left: 8em;
+    padding-right: 8em;
+  }
+
+  .h2 {
+    @include font-size-em(30);
+    font-weight: $bold;
+    text-transform: uppercase;
+    
+    @media (min-width: 780px) {
+      @include font-size-em(45);
+    }
+  }
+
+  .tel {
+    padding-top: 1em;
+    padding-bottom: 1em;
+
+    a {
+      color: $white;
+      font-weight: $thin;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+
+    i {
+      margin-right: .5em;
+    }
+  }
+
+  .social {
+    .h3 {
+      @include font-size-em(20);
+      font-weight: $bold;
+      text-transform: uppercase;
+      padding-bottom: 1em;
+    }
+
+    a {
+      color: $white;
+
+      &:hover {
+        text-decoration: none;
+      }
+      
+      i {
+        @include font-size-em(20);
+        margin-right: .5em;
+      }
+    }
+  }
 }
