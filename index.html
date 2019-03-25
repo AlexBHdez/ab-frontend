@@ -7,6 +7,7 @@
     <meta name="generator" content="Webpack v4.23.1">
     <meta name="keywords" content="design, css, web, html" />
     <meta name="description" content="Personal Portfolio Alex Bretones">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 	<title>Alex Bretones | Graphic &amp; Web Development</title>
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
 <link href="css/index.css" rel="stylesheet"></head>
@@ -23,16 +24,16 @@
                     <div class="collapse navbar-collapse" id="mainNav">
                       <ul class="navbar-nav">
                         <li class="nav-item active">
-                          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                          <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link" href="#">About</a>
+                          <a class="nav-link" href="/#about">About</a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link" href="#">Projects</a>
+                          <a class="nav-link" href="/#projects">Projects</a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link" href="#">Contact me</a>
+                          <a class="nav-link" href="/#contact">Contact me</a>
                         </li>
                       </ul>
                     </div>
@@ -46,14 +47,343 @@
                   <div class="hero__text">
                       <h1 class="h1 d-inline">Full stack developer & graphic designer</h1>
                       <h2 class="h2">In love with graphic design and <span class="text-secondary">code.</span></h2>
-                      <app-button>
-                          <button type="button" class="btn btn-outline-light rounded-0 btn-md ml-1 mt-2">
+                      <app-button class="">
+                          <a href="/#about" class="btn btn-outline-light rounded-0 btn-md ml-1 mt-2">
                             what i do
-                          </button>
+                          </a>
                       </app-button>      </div>
                 </header>
               </section>
-            </app-hero>    </main>
+            </app-hero>        <app-about id="about">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-12">
+                    <h2 class="title">
+                      I am a creative freelancer based in Barcelona, Spain, specialized in Branding Identity and Web design with strong front-end coding skills.
+                    </h2>
+                  </div>
+                  <app-about-item class="col-12 col-md-4">
+                    <div class="icon-wrapper">
+                      <img src="/../assets/images/stamp-icon.png" />
+                    </div>
+                    <div class="content-wrapper">
+                      <h3 class="h3">branding</h3>
+                      <p class="text">Discover the essence of a brand and create a complete identity across all current platforms.</p>
+                    </div>
+                  </app-about-item>      <app-about-item class="col-12 col-md-4">
+                    <div class="icon-wrapper">
+                      <img src="/../assets/images/web-design-icon.png" />
+                    </div>
+                    <div class="content-wrapper">
+                      <h3 class="h3">web design</h3>
+                      <p class="text">From a sketch to a fully functional website with or without CMS.</p>
+                    </div>
+                  </app-about-item>      <app-about-item class="col-12 col-md-4">
+                    <div class="icon-wrapper">
+                      <img src="/../assets/images/coding-icon.png" />
+                    </div>
+                    <div class="content-wrapper">
+                      <h3 class="h3">front-end</h3>
+                      <p class="text">I develop applications with Javascript, Node.js, MongoDB and with frameworks like Angular or React.</p>
+                    </div>
+                  </app-about-item>      <div class="col-12">
+                    <h2 class="h2 text-center text-uppercase">background</h2>
+                    <div class="row">
+                      <div class="col-12 col-md-6">
+                        <p class="bio text-md-right">I am a graphic designer with a Master Degree in Business Management (Universitat de Barcelona), a Postdegree in Ecommerce (Seeway) and a Master Degree in Graphic Design and Digital Art (Seeway). I also have a Degree in Education which allowed me to teach design in different schools in Barcelona. I just finished Ironhack Web Development part-time learning full stack technologies, I believe that both, my design experience aligned with my education in Full-Stack Development will allow me to grow into a more proficient and complete designer professional.</p>
+                        <app-button class="">
+                            <button type="button" class="btn d-block btn-outline-secondary text-light rounded-0 btn-md ml-1 mt-2 ml-md-auto">
+                              download my cv
+                            </button>
+                        </app-button>            <app-button class="">
+                            <button type="button" class="btn d-block btn-outline-secondary text-light rounded-0 btn-md ml-1 mt-2 ml-md-auto">
+                              checkout my projects
+                            </button>
+                        </app-button>          </div>
+                      <div class="col-12 col-md-6 bg-white d-flex justify-content-center align-items-center text-dark">
+                        currently in work
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </app-about>        <app-projects id="projects">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-12 bg-secondary intro">
+                    <h2>check out some of my most recent projects</h2>
+                  </div>
+                  <app-project-item class="col-12 col-md-6 p-0">
+                    <article style="background: url('/../assets/images/projects/dragonvegano/dragon-03.jpg') no-repeat scroll center center / cover;">
+                      <div class="project__hover">
+                        <a href="#">
+                          <div class="project__hover_layer">
+                            <div class="project__info">
+                              <h3 class="project__info_title">
+                                dragón vegano
+                              </h3>
+                              <h4 class="project__info_subtitle">
+                                front-end development
+                              </h4>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                    </article>
+                  </app-project-item>      <app-project-item class="col-12 col-md-6 p-0">
+                    <article style="background: url('/../assets/images/projects/angulartimer/angular-timer-showcase.jpg') no-repeat scroll center center / cover;">
+                      <div class="project__hover">
+                        <a href="#">
+                          <div class="project__hover_layer">
+                            <div class="project__info">
+                              <h3 class="project__info_title">
+                                angular timer
+                              </h3>
+                              <h4 class="project__info_subtitle">
+                                front-end development
+                              </h4>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                    </article>
+                  </app-project-item>      <app-project-item class="col-12 col-md-6 p-0">
+                    <article style="background: url('/../assets/images/projects/mrwolf/header-mrwolf.jpg') no-repeat scroll center center / cover;">
+                      <div class="project__hover">
+                        <a href="#">
+                          <div class="project__hover_layer">
+                            <div class="project__info">
+                              <h3 class="project__info_title">
+                                mr wolf lab
+                              </h3>
+                              <h4 class="project__info_subtitle">
+                                web design
+                              </h4>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                    </article>
+                  </app-project-item>      <app-project-item class="col-12 col-md-6 p-0">
+                    <article style="background: url('/../assets/images/projects/backdoor/backdoortv_01.jpg') no-repeat scroll center center / cover;">
+                      <div class="project__hover">
+                        <a href="#">
+                          <div class="project__hover_layer">
+                            <div class="project__info">
+                              <h3 class="project__info_title">
+                                Back Door TV
+                              </h3>
+                              <h4 class="project__info_subtitle">
+                                Branding
+                              </h4>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                    </article>
+                  </app-project-item>      <app-project-item class="col-12 col-md-6 p-0">
+                    <article style="background: url('/../assets/images/projects/3d/CIERVO_ESTUDIO.jpg') no-repeat scroll center center / cover;">
+                      <div class="project__hover">
+                        <a href="#">
+                          <div class="project__hover_layer">
+                            <div class="project__info">
+                              <h3 class="project__info_title">
+                                3d tests
+                              </h3>
+                              <h4 class="project__info_subtitle">
+                                3d
+                              </h4>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                    </article>
+                  </app-project-item>      <app-project-item class="col-12 col-md-6 p-0">
+                    <article style="background: url('/../assets/images/projects/a2a2/construccionesa2a2.jpg') no-repeat scroll center center / cover;">
+                      <div class="project__hover">
+                        <a href="#">
+                          <div class="project__hover_layer">
+                            <div class="project__info">
+                              <h3 class="project__info_title">
+                                construcciones a2a2
+                              </h3>
+                              <h4 class="project__info_subtitle">
+                                Web design
+                              </h4>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                    </article>
+                  </app-project-item>      <app-project-item class="col-12 col-md-6 p-0">
+                    <article style="background: url('/../assets/images/projects/bodasvelvet/bodasvelvet.jpeg') no-repeat scroll center center / cover;">
+                      <div class="project__hover">
+                        <a href="#">
+                          <div class="project__hover_layer">
+                            <div class="project__info">
+                              <h3 class="project__info_title">
+                                bodas velvet
+                              </h3>
+                              <h4 class="project__info_subtitle">
+                                Branding, Web design
+                              </h4>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                    </article>
+                  </app-project-item>      <app-project-item class="col-12 col-md-6 p-0">
+                    <article style="background: url('/../assets/images/projects/sombrasil/sombrasil_01.jpg') no-repeat scroll center center / cover;">
+                      <div class="project__hover">
+                        <a href="#">
+                          <div class="project__hover_layer">
+                            <div class="project__info">
+                              <h3 class="project__info_title">
+                                som brasil
+                              </h3>
+                              <h4 class="project__info_subtitle">
+                                Branding
+                              </h4>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                    </article>
+                  </app-project-item>      <app-project-item class="col-12 col-md-6 p-0">
+                    <article style="background: url('/../assets/images/projects/elcharcoexport/elcharco_identity.jpg') no-repeat scroll center center / cover;">
+                      <div class="project__hover">
+                        <a href="#">
+                          <div class="project__hover_layer">
+                            <div class="project__info">
+                              <h3 class="project__info_title">
+                                el charco export
+                              </h3>
+                              <h4 class="project__info_subtitle">
+                                Branding, web design
+                              </h4>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                    </article>
+                  </app-project-item>      <app-project-item class="col-12 col-md-6 p-0">
+                    <article style="background: url('/../assets/images/projects/uecornella-ecommerce/uecornella_ecommerce_web_02.jpg') no-repeat scroll center center / cover;">
+                      <div class="project__hover">
+                        <a href="#">
+                          <div class="project__hover_layer">
+                            <div class="project__info">
+                              <h3 class="project__info_title">
+                                ue cornellà ecommerce
+                              </h3>
+                              <h4 class="project__info_subtitle">
+                                web design
+                              </h4>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                    </article>
+                  </app-project-item>      <app-project-item class="col-12 col-md-6 p-0">
+                    <article style="background: url('/../assets/images/projects/back2basics/back2basics.jpg') no-repeat scroll center center / cover;">
+                      <div class="project__hover">
+                        <a href="#">
+                          <div class="project__hover_layer">
+                            <div class="project__info">
+                              <h3 class="project__info_title">
+                                back2basics
+                              </h3>
+                              <h4 class="project__info_subtitle">
+                                branding
+                              </h4>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                    </article>
+                  </app-project-item>      <app-project-item class="col-12 col-md-6 p-0">
+                    <article style="background: url('/../assets/images/projects/uecornella-tv/logo_uecornellatv_01.jpg') no-repeat scroll center center / cover;">
+                      <div class="project__hover">
+                        <a href="#">
+                          <div class="project__hover_layer">
+                            <div class="project__info">
+                              <h3 class="project__info_title">
+                                uecornellà tv
+                              </h3>
+                              <h4 class="project__info_subtitle">
+                                branding
+                              </h4>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                    </article>
+                  </app-project-item>      <app-project-item class="col-12 col-md-6 p-0">
+                    <article style="background: url('/../assets/images/projects/primeraventa/header-primeraventa.jpg') no-repeat scroll center center / cover;">
+                      <div class="project__hover">
+                        <a href="#">
+                          <div class="project__hover_layer">
+                            <div class="project__info">
+                              <h3 class="project__info_title">
+                                primeraventa.com
+                              </h3>
+                              <h4 class="project__info_subtitle">
+                                web design
+                              </h4>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                    </article>
+                  </app-project-item>      <app-project-item class="col-12 col-md-6 p-0">
+                    <article style="background: url('/../assets/images/projects/podium/BRANDING_01_02.jpg') no-repeat scroll center center / cover;">
+                      <div class="project__hover">
+                        <a href="#">
+                          <div class="project__hover_layer">
+                            <div class="project__info">
+                              <h3 class="project__info_title">
+                                podium icp
+                              </h3>
+                              <h4 class="project__info_subtitle">
+                                branding, web design
+                              </h4>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                    </article>
+                  </app-project-item>    </div>
+              </div>
+            </app-projects>        <app-contact id="contact">
+              <div class="container-fluid">
+                <h2 class="h2">contact me for more information</h2>
+                <div class="tel">
+                  <p>
+                    <a href="tel:+34675273454">
+                      <i class="fas fa-phone"></i>
+                      +34 675 273 454
+                    </a>
+                  </p>
+                  <p>
+                    <a href="mailto:wola@alexbretones.com">
+                      <i class="fas fa-envelope"></i>
+                      wola@alexbretones.com
+                    </a>
+                  </p>
+                </div>
+                <div class="social">
+                  <h3 class="h3">follow me on</h3>
+                  <a href="https://www.instagram.com/abretonesdesign/" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                  <a href="https://github.com/AlexBHdez" target="_blank">
+                    <i class="fab fa-github"></i>
+                  </a>
+                  <a href="https://www.linkedin.com/in/abretones" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                  </a>
+                </div>
+              </div>
+            </app-contact>    </main>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
