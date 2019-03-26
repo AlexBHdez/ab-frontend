@@ -4390,7 +4390,8 @@ app-header {
     transition: background-color 0.15s ease-in-out; }
     app-header .navbar.navbar-bg {
       background-color: #131416;
-      border-color: #131416; }
+      border-color: #131416;
+      transition: background-color 1s ease-in-out; }
   app-header .navbar-brand {
     font-size: 24px;
     font-size: 1.5em;
@@ -4501,16 +4502,25 @@ app-project-item {
   app-project-item article {
     height: 100%; }
     app-project-item article .project__hover {
-      display: none;
-      justify-content: center;
-      align-items: center;
       height: 100%;
-      background-color: rgba(19, 20, 22, 0.6); }
+      background-color: rgba(19, 20, 22, 0.6);
+      opacity: 0; }
       app-project-item article .project__hover.show {
-        display: flex; }
+        opacity: 1;
+        transition: opacity 0.5s ease-in-out; }
+      app-project-item article .project__hover a {
+        height: 100%;
+        width: 100%; }
+      app-project-item article .project__hover_layer {
+        height: 100%; }
       app-project-item article .project__hover .project__info {
         color: #FFFFFF;
-        text-align: center; }
+        text-align: center;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; }
         app-project-item article .project__hover .project__info_title {
           font-size: 17px;
           font-size: 1.0625em;
