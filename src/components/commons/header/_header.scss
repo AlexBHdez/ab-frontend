@@ -9,10 +9,12 @@
     border-bottom: 1px solid rgba($white, .4);
 
     transition: background-color $fast ease-in-out;
-
+    
     &.navbar-bg {
       background-color: $primary;
       border-color: $primary;
+
+      transition: background-color 1s ease-in-out;
     }
   }
   

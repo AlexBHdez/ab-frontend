@@ -29,8 +29,10 @@
         <div class="row">
           <div class="col-12 col-md-6">
             <p class="bio text-md-right">I am a graphic designer with a Master Degree in Business Management (Universitat de Barcelona), a Postdegree in Ecommerce (Seeway) and a Master Degree in Graphic Design and Digital Art (Seeway). I also have a Degree in Education which allowed me to teach design in different schools in Barcelona. I just finished Ironhack Web Development part-time learning full stack technologies, I believe that both, my design experience aligned with my education in Full-Stack Development will allow me to grow into a more proficient and complete designer professional.</p>
-            {{> app-button buttonWithA=false buttonText="download my cv" colClasses="" className="d-block btn-outline-secondary text-light rounded-0 btn-md ml-1 mt-2 ml-md-auto" }}
-            {{> app-button buttonWithA=false buttonText="checkout my projects" colClasses="" className="d-block btn-outline-secondary text-light rounded-0 btn-md ml-1 mt-2 ml-md-auto" }}
+            <div class="d-flex flex-column text-md-right">
+              {{> app-button buttonWithA=true buttonLink="assets/docs/cv-alex-bretones.pdf" target="_blank" buttonText="download my cv" colClasses="" className="btn-outline-secondary text-light rounded-0 btn-md ml-1 mt-2 ml-md-auto" }}
+              {{> app-button buttonWithA=true buttonLink="/#projects" buttonText="checkout my projects" colClasses="" className="btn-outline-secondary text-light rounded-0 btn-md ml-1 mt-2 ml-md-auto" }}
+            </div>
           </div>
           <div class="col-12 col-md-6 bg-white d-flex justify-content-center align-items-center text-dark">
             currently in work
